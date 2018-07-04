@@ -187,53 +187,34 @@ class DashboardPage extends React.Component {
         <Row>
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Total Applicants"
-              subtitle="This year"
-              number="6.2k"
+              title="All Programs Total Applicants"
               color="secondary"
-              progress={{
-                value: 75,
-                label: 'Last year',
-              }}
+              number= {6200}
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="BloomMasters"
-              subtitle="This year"
-              number="1.2K"
+              title="Bloom Masters   Total Applicants"
+              number={1200}
               color="secondary"
-              progress={{
-                value: 45,
-                label: 'Last year',
-              }}
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Bourse d'élite"
-              subtitle="This year"
-              number="2.2K"
+              title="Boursier d'Elite Total Applicants"
+              number={2200}
               color="secondary"
-              progress={{
-                value: 90,
-                label: 'Last year',
-              }}
+             
             />
           </Col>
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="SPARK"
-              subtitle="This year"
-              number="2.8K"
+              title="SPARK Total Applicants"
               color="secondary"
-              progress={{
-                value: 60,
-                label: 'Last year',
-              }}
+              number={2800}
             />
           </Col>
         </Row>

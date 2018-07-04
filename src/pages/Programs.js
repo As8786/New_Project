@@ -64,7 +64,7 @@ class Programs extends React.Component {
           </Card>
         </Col>
       </Row>
-
+      {  (this.state.program === "Spark" || this.state.program === "Boursier d'Elite") ||
       <Row>
         <Col xl={6} lg={12} md={12}>
           <Card>
@@ -84,11 +84,11 @@ class Programs extends React.Component {
           </Card>
         </Col>
       </Row>
-
+      }
       <Row>
         <Col>
           <Card className="mb-3">
-            <CardHeader>BloomMasters</CardHeader>
+            <CardHeader>{this.state.program} Applicants</CardHeader>
             <CardBody>
               <Table responsive>
                 <thead>

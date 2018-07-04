@@ -16,22 +16,22 @@ const NumberWidget = ({
     <Card body {...restProps}>
       <div className="d-flex justify-content-between">
         <CardText tag="div">
-          <Typography className="mb-0">
+          <Typography className="mb-0" style={{marginRight:"10px"}}>
             <strong>{title}</strong>
           </Typography>
           <Typography className="mb-0 text-muted small">{subtitle}</Typography>
         </CardText>
         <CardTitle className={`text-${color}`}>{number}</CardTitle>
       </div>
-      <Progress value={value} color={color} style={{ height: '8px' }} />
-      <CardText tag="div" className="d-flex justify-content-between">
+   
+{/*      <CardText tag="div" className="d-flex justify-content-between">
         <Typography tag="span" className="text-left text-muted small">
           {label}
         </Typography>
         <Typography tag="span" className="text-right text-muted small">
           {value}%
         </Typography>
-      </CardText>
+  </CardText>*/}
     </Card>
   );
 };
