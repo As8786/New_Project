@@ -23,7 +23,7 @@ const Page = ({
     <Tag className={classes} {...restProps}>
       <div className={bem.e('header')}>
         {title && typeof title === 'string' ? (
-          <Typography type="h1" className={bem.e('title')}>
+          <Typography type="h1" className={bem.e('title')} style={{color:"grey", fontFamily: 'Galada'}} >
             {title}
           </Typography>
         ) : (

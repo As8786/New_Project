@@ -72,9 +72,9 @@ class ApplicantProfile extends React.Component {
           <Card inverse color="" style={{borderColor:"pink"}}>
               <CardBody style={{height:"270px", color:'grey'}}>
                 <CardTitle className="text-capitalize">
-                <b> Contacts</b>
+                <i><b> Contacts</b></i>
                 </CardTitle>
-                <CardText>
+                <CardText style={{fontSize:"14px", marginTop:"30px"}}>
                   <p style={{fontStyle:"bold"}}> <b>Email : </b>  houssem@houssem.com</p>
                   <p style={{fontStyle:"bold"}}> <b>Phone : </b>52 48 79 96 89</p>
                   <p style={{fontStyle:"bold"}}> <b>Facebook : </b>Houssem Facebook </p>
@@ -111,9 +111,9 @@ class ApplicantProfile extends React.Component {
           <Card inverse color="" style={{borderColor:"pink"}}>
               <CardBody style={{height:"270px", color:'grey'}}>
                 <CardTitle className="text-capitalize">
-                <b>Houssem Activity Information</b>
+                <i><b>Houssem Activity Information</b></i>
                 </CardTitle>
-                <CardText>
+                <CardText style={{fontSize:"14px", marginTop:"30px"}}>
                   <p style={{fontStyle:"bold"}}> <b>Last Program :</b> BLOOMMASTERS </p>
                   <p style={{fontStyle:"bold"}}> <b>Edition of Last Program Follow Up : </b>2017</p>
                   <p style={{fontStyle:"bold"}}> <b>Last Contact By Email :</b> 27/07/2017 </p>
@@ -132,10 +132,10 @@ class ApplicantProfile extends React.Component {
           <Card inverse color="" style={{borderColor:"pink"}}>
               <CardBody style={{height:"270px", color:'grey'}}>
                 <CardTitle className="text-capitalize" >
-                <b> Houssem Followed Trainning Program</b>
+                <i><b> Houssem Followed Trainning Program</b></i>
                 </CardTitle>
-                <CardText>
-                <Table responsive>
+                <CardText style={{fontSize:"14px", marginTop:"30px"}}>
+                <Table striped>
                 <thead>
                   <tr>
                     <th>#</th>
@@ -186,13 +186,12 @@ class ApplicantProfile extends React.Component {
           <Card inverse color="" style={{borderColor:"pink"}}>
               <CardBody style={{height:"270px", color:'grey'}}>
                 <CardTitle className="text-capitalize" >
-                <b>Education Course</b>
+                <i><b>Education Course</b></i>
                 </CardTitle>
-                <CardText >
+                <CardText style={{fontSize:"14px", marginTop:"30px"}} >
                   <p style={{fontStyle:"bold"}}> <b>School : </b>Lycee 9 Avril Tunis </p>
                   <p style={{fontStyle:"bold"}}> <b>College : </b>Faculté des Sciences de Tunis</p>
                   <p style={{fontStyle:"bold"}}> <b>Study Course :</b> Master IT </p>
-                  <p style={{fontStyle:"bold"}}> <b>Current year : </b>1 </p>
 
 
                 </CardText>

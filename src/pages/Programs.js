@@ -37,10 +37,10 @@ class Programs extends React.Component {
 
       <Row>
         <Col lg={12} md={12} sm={12} xs={12} style={{display:"flex", justifyContent:"space-around"}}>
-            <Button value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button>
-            <Button value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program</Button>
-            <Button value="Spark" onClick={this.onChange}> Spark Program</Button>  
-            <Button> + Add New Program</Button>                                                          
+          {this.state.program ==="Bloom Masters" ?  <Button  value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button> : <Button outline color="secondary" value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button>}
+          {this.state.program ==="Boursier d'Elite" ?  <Button  value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program </Button> : <Button outline color="secondary" value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program </Button>}
+          {this.state.program ==="Spark" ?  <Button  value="Spark" onClick={this.onChange}> Spark Program </Button> : <Button outline color="secondary" value="Spark" onClick={this.onChange}> Spark Program </Button>}
+          <Button outline color="secondary"> + Add New Program</Button>                                                          
         </Col>  
       </Row>  
          

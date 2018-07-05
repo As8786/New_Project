@@ -55,7 +55,7 @@ class UserProfile extends React.Component {
               </Card>
         </Col>
         </Row>
-
+  {/*
         <Row style={{justifyContent:"center"}} >  
         <Col lg={5} md={5} sm={9} xs={12}>    
           <Card inverse color="" style={{borderColor:"pink"}}>
@@ -99,6 +99,7 @@ class UserProfile extends React.Component {
         </Col>
 
       </Row>
+  */}
     </Page>
   );
 }};

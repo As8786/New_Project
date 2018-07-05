@@ -13,15 +13,15 @@ const NumberWidget = ({
   ...restProps
 }) => {
   return (
-    <Card body {...restProps}>
+    <Card body {...restProps}  style={{alignItems:"center", padding:"10px"}}>
       <div className="d-flex justify-content-between">
         <CardText tag="div">
-          <Typography className="mb-0" style={{marginRight:"10px"}}>
-            <strong>{title}</strong>
+          <Typography className="mb-0" >
+            <strong>{title}</strong> Total Applicants
           </Typography>
           <Typography className="mb-0 text-muted small">{subtitle}</Typography>
         </CardText>
-        <CardTitle className={`text-${color}`}>{number}</CardTitle>
+        <CardTitle className={`text-${color}`} style={{paddingTop:"10px"}}><b>{number}</b></CardTitle>
       </div>
    
 {/*      <CardText tag="div" className="d-flex justify-content-between">

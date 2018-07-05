@@ -187,7 +187,7 @@ class DashboardPage extends React.Component {
         <Row>
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="All Programs Total Applicants"
+              title="All Programs"
               color="secondary"
               number= {6200}
             />
@@ -195,7 +195,7 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Bloom Masters   Total Applicants"
+              title="Bloom Masters"
               number={1200}
               color="secondary"
             />
@@ -203,7 +203,7 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Boursier d'Elite Total Applicants"
+              title="Boursier d'Elite"
               number={2200}
               color="secondary"
              
@@ -212,7 +212,7 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="SPARK Total Applicants"
+              title="SPARK "
               color="secondary"
               number={2800}
             />
