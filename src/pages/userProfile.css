@@ -1,0 +1,24 @@
+.user-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 420px;
+    color:grey;
+    border:1px solid pink
+}
+
+.modify-input {
+    outline: none;
+    border: 1px solid transparent;
+    background: transparent;
+    text-align: center;
+    color:grey ;
+    margin-left:17px
+}
+
+
+.modify-input:focus {
+   border-bottom: 1px solid grey
+}

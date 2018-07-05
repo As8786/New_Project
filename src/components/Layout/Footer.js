@@ -9,7 +9,7 @@ const Footer = () => {
     <Navbar style={{justifyContent:"center"}}>
       <Nav navbar>
         <NavItem >
-          With love by GoMyCode
+          
         </NavItem>
       </Nav>
     </Navbar>

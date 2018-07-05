@@ -166,7 +166,7 @@ class App extends React.Component {
 
             <LayoutRoute
               exact
-              path="/applicant_profile"
+              path="/applicant-profile"
               layout={MainLayout}
               component={ApplicantProfile}
             />  
@@ -179,7 +179,7 @@ class App extends React.Component {
 
             <LayoutRoute
               exact
-              path="/user_profile"
+              path="/user-profile"
               layout={MainLayout}
               component={UserProfile}
             />

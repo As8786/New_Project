@@ -20,10 +20,10 @@ const Page = ({
   const classes = bem.b('px-3', className);
 
   return (
-    <Tag className={classes} {...restProps}>
+    <Tag className={classes} {...restProps} style={{minHeight:"86vh"}}>
       <div className={bem.e('header')}>
         {title && typeof title === 'string' ? (
-          <Typography type="h1" className={bem.e('title')} style={{color:"grey", fontFamily: 'Galada'}} >
+          <Typography type="h1" className={bem.e('title')} style={{color:"grey"}} >
             {title}
           </Typography>
         ) : (
@@ -42,6 +42,7 @@ const Page = ({
         )}
       </div>
       {children}
+      <div style={{textAlign:"center",  bottom: 0,fontWeight:"bold", marginBottom:"7px"}}> Made with <span style={{color:"red", fontSize:"18px"}}>&hearts; </span> by GoMyCode  </div>
     </Tag>
   );
 };

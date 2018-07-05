@@ -32,7 +32,6 @@ class Programs extends React.Component {
   return (
     <Page
       title="Programs" 
-      breadcrumbs={[{ name: this.state.program, active: true }]}
       className="TablePage">
 
       <Row>

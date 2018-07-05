@@ -89,12 +89,12 @@ class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <main className="cr-app bg-light">
+
+      <main className="cr-app bg-light"  > 
         <Sidebar />
-        <Content fluid onClick={this.handleContentClick}>
+        <Content fluid onClick={this.handleContentClick} >
           <Header />
           {children}
-          <Footer style={{textAlign:"center"}}/>
         </Content>
 
       {/*  <NotificationSystem
@@ -105,6 +105,7 @@ class MainLayout extends React.Component {
           style={NOTIFICATION_SYSTEM_STYLE}
         />*/}
       </main>
+
     );
   }
 }

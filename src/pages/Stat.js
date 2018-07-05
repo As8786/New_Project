@@ -67,7 +67,7 @@ class Stat extends React.Component{
       title="Filtred Selection"
       className="TablePage">
      
-      <Row style={{border:"1px solid gainsboro ",margin:"auto",flexDirection:"column" ,marginBottom:"17px", justifyContent:"center", borderRadius:"3px"}} >
+      <Row style={{border:"1px solid gainsboro ",margin:"auto",flexDirection:"column" ,marginBottom:"17px", justifyContent:"center", borderRadius:"3px", paddingTop:"10px"}} >
         <Row>
                 <Col lg={12} md={12} sm={12} xs={12} style={{display:"flex",justifyContent:"space-around", paddingLeft:"20px", paddingRight:"20px", color:"grey", textAlign:"center"}}>
                 
@@ -173,11 +173,11 @@ class Stat extends React.Component{
                   <InputGroupText>Search By Age</InputGroupText>
                 </InputGroupAddon>
                 <InputGroupAddon addonType="prepend" style={{marginLeft:"10px"}} >
-                  <InputGroupText style={{fontSize:"12px"}} >MIN</InputGroupText>
+                  <InputGroupText style={{fontSize:"12px"}} >min</InputGroupText>
                 </InputGroupAddon>
                 <Input onChange={this.onChange} name="min"/>
                 <InputGroupAddon addonType="prepend" style={{marginLeft:"10px"}}>
-                  <InputGroupText style={{fontSize:"12px"}}>MAX</InputGroupText>
+                  <InputGroupText style={{fontSize:"12px"}}>max</InputGroupText>
                 </InputGroupAddon>
                 <Input onChange={this.onChange} name="max"/>
               </InputGroup>
@@ -204,7 +204,7 @@ class Stat extends React.Component{
                 <Button color="secondary" style={{marginRight:"10px"}} onClick={()=>window.location.reload()}>Remove All Filter</Button>
                 <Button color="secondary" style={{marginRight:"10px"}} onClick={()=>this.exportExcel(applicants)}>Export Excel File </Button>
                 <React.Fragment >
-                    <Button onClick={this.toggle()} style={{marginRight:"10px"}}>Send Email</Button>
+                    <Button onClick={this.toggle()} style={{marginRight:"10px"}}>Send Emails</Button>
                     <Modal
                       isOpen={this.state.modal}
                       toggle={this.toggle()}
@@ -214,10 +214,10 @@ class Stat extends React.Component{
                       <Input placeholder="Email Subject" style={{marginLeft:"17px",marginRight:"17px",width:"90%" }}/>
                       <Input type="textarea" placeholder="Email Content" style={{margin:"17px",width:"90%", minHeight:"300px"  }}/>
                       <ModalFooter>
-                        <Button color="primary" onClick={this.toggle()}>
-                          Send
-                        </Button>{' '}
                         <Button color="secondary" onClick={this.toggle()}>
+                          Send to {applicants.length} Candidates
+                        </Button>{' '}
+                        <Button color="light" onClick={this.toggle()}>
                           Cancel
                         </Button>
                       </ModalFooter>
