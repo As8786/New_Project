@@ -78,8 +78,8 @@ class DashboardPage extends React.Component {
       datasets: [
         {
           label: 'Male',
-          backgroundColor: getColor('primary'),
-          borderColor: getColor('primary'),
+          backgroundColor: "#151547",
+          borderColor: "#151547",
           borderWidth: 1,
           data: [
             randomNum(),
@@ -99,8 +99,8 @@ class DashboardPage extends React.Component {
         },
         {
           label: 'Female',
-          backgroundColor: getColor('secondary'),
-          borderColor: getColor('secondary'),
+          backgroundColor: "#d7790e",
+          borderColor: "#d7790e",
           borderWidth: 1,
           data: [
             randomNum(),
@@ -128,8 +128,8 @@ class DashboardPage extends React.Component {
       datasets: [
         {
           label: 'BloomMasters',
-          backgroundColor: getColor('primary'),
-          borderColor: getColor('primary'),
+          backgroundColor: "#151547",
+          borderColor: "#151547",
           borderWidth: 1,
           data: [
             randomNum(),
@@ -143,8 +143,8 @@ class DashboardPage extends React.Component {
         },
         {
           label: "Bourse d'élite",
-          backgroundColor: getColor('secondary'),
-          borderColor: getColor('secondary'),
+          backgroundColor:"#d7790e",
+          borderColor:"#d7790e",
           borderWidth: 1,
           data: [
             randomNum(),

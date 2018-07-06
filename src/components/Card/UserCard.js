@@ -22,9 +22,9 @@ const UserCard = ({
 
   return (
     <Card inverse className={classes} {...restProps}>
-      <CardBody className="d-flex justify-content-center align-items-center flex-column">
+      <CardBody className="d-flex justify-content-center align-items-center flex-column"  style={{color:"grey"}}>
         <Avatar src={avatar} size={avatarSize} className="mb-2" />
-        <CardTitle>{title}</CardTitle>
+        <CardTitle><b>{title}</b></CardTitle>
         <CardSubtitle>{Good}</CardSubtitle>
         <CardSubtitle style={{marginTop:"7px"}}>{subtitle}</CardSubtitle>
         <CardText>

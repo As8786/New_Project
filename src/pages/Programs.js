@@ -36,10 +36,10 @@ class Programs extends React.Component {
 
       <Row>
         <Col lg={12} md={12} sm={12} xs={12} style={{display:"flex", justifyContent:"space-around"}}>
-          {this.state.program ==="Bloom Masters" ?  <Button  value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button> : <Button outline color="secondary" value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button>}
-          {this.state.program ==="Boursier d'Elite" ?  <Button  value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program </Button> : <Button outline color="secondary" value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program </Button>}
-          {this.state.program ==="Spark" ?  <Button  value="Spark" onClick={this.onChange}> Spark Program </Button> : <Button outline color="secondary" value="Spark" onClick={this.onChange}> Spark Program </Button>}
-          <Button outline color="secondary"> + Add New Program</Button>                                                          
+          {this.state.program ==="Bloom Masters" ?  <Button color="primary" value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button> : <Button outline color="primary" value="Bloom Masters" onClick={this.onChange}> Bloom Masters Program </Button>}
+          {this.state.program ==="Boursier d'Elite" ?  <Button color="primary" value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program </Button> : <Button outline color="primary" value="Boursier d'Elite" onClick={this.onChange}> Boursier d'Elite Program </Button>}
+          {this.state.program ==="Spark" ?  <Button color="primary"  value="Spark" onClick={this.onChange}> Spark Program </Button> : <Button outline color="primary" value="Spark" onClick={this.onChange}> Spark Program </Button>}
+          <Button outline color="primary"> + Add New Program</Button>                                                          
         </Col>  
       </Row>  
          
@@ -95,7 +95,7 @@ class Programs extends React.Component {
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Birthday Date</th>
+                    <th>Birth Date</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Town</th>
@@ -121,8 +121,8 @@ class Programs extends React.Component {
               </Table>
             </CardBody>
                 <div style={{display:"flex",flexDirection:"row-reverse", marginBottom:"17px"}}>
-                <Button color="secondary" style={{marginRight:"10px"}}>Export Excel File </Button>
-                <Button color="secondary" style={{marginRight:"10px"}}>View All</Button>
+                <Button color="primary" style={{marginRight:"10px"}}>Export Excel File </Button>
+                <Button color="primary" style={{marginRight:"10px"}}>View All</Button>
                 </div>
           </Card>
         </Col>
@@ -141,8 +141,8 @@ const genLineData = (moreData = {}, moreData2 = {}) => {
     datasets: [
       {
         label: 'Male',
-        backgroundColor: getColor('primary'),
-        borderColor: getColor('primary'),
+        backgroundColor: "#151547",
+        borderColor: "#151547",
         borderWidth: 1,
         data: [
           randomNum(),
@@ -157,8 +157,8 @@ const genLineData = (moreData = {}, moreData2 = {}) => {
       },
       {
         label: 'Female',
-        backgroundColor: getColor('secondary'),
-        borderColor: getColor('secondary'),
+        backgroundColor: "#d7790e",
+        borderColor: "#d7790e",
         borderWidth: 1,
         data: [
           randomNum(),
@@ -181,8 +181,8 @@ const genLineData1 = (moreData = {}, moreData2 = {}) => {
     datasets: [
       {
         label: 'Applicants',
-        backgroundColor: getColor('primary'),
-        borderColor: getColor('primary'),
+        backgroundColor: "#151547",
+        borderColor: "#151547",
         borderWidth: 1,
         data: [
           randomNum(),

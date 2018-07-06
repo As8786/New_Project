@@ -82,10 +82,10 @@ const pageContents = [
 
 const navItems = [
   { to: '/', name: 'dashboard', exact: true, Icon: MdDashboard },
-  { to: '/applicants', name: 'programs', exact: false, Icon: MdBorderAll },
-  { to: '/stat', name: 'Statistics', exact: false, Icon: MdBorderAll }, 
-  { to: '/applicant-profile', name: 'applicant profile', exact: false, Icon: MdBorderAll },
-  { to: '/user-profile', name: 'User Profile', exact: false, Icon: MdBorderAll },
+  { to: '/applicants', name: 'programs', exact: false, Icon: MdWeb },
+  { to: '/stat', name: 'applicants', exact: false, Icon: MdInsertChart }, 
+  { to: '/applicant-profile', name: 'applicant profile', exact: false, Icon: MdWidgets },
+  { to: '/user-profile', name: 'User Profile', exact: false, Icon: MdStar },
   { to: '/login', name: 'login / signup', exact: false, Icon: MdAccountCircle },    
   
 ];
@@ -101,6 +101,7 @@ class Sidebar extends React.Component {
     isOpenComponents: true,
     isOpenContents: true,
     isOpenPages: true,
+    currentPage : "dashboard"
   };
 
   handleClick = name => () => {
@@ -113,13 +114,21 @@ class Sidebar extends React.Component {
     });
   };
 
+  onChange = (e) => {
+    this.setState({
+      currentPage : e
+    })
+    console.log(e)
+  }
+
   render() {
+    console.log()
     return (
-      <aside className={bem.b()} data-image={sidebarBgImage}>
-        <div className={bem.e('background')} style={sidebarBackground} />
+      <aside className={bem.b()} style={{borderRight:"1px solid #00000020"}} >
+        <div className={bem.e('')}  />
         <div className={bem.e('content')}>
           <Navbar>
-            <SourceLink className="navbar-brand " style={{justifyContent :"center", marginLeft : "10px", color:"azure"}}>
+            <SourceLink className="navbar-brand " style={{justifyContent :"center", marginLeft : "10px"}}>
               <img
                 src='biat.png'
                 width="150"
@@ -141,7 +150,7 @@ class Sidebar extends React.Component {
                   activeClassName="active"
                   exact={exact}>
                   <Icon className={bem.e('nav-item-icon')} />
-                  <span className="">{name}</span>
+                  <span className="" onClick={()=>{this.onChange(name)}} style={(this.state.currentPage === name)? {color:"#d7790e"}:{color:"#202449"}}>{name}</span>
                 </BSNavLink>
               </NavItem>
             ))}

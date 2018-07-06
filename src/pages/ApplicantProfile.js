@@ -93,13 +93,14 @@ class ApplicantProfile extends React.Component {
               text="Tunis"
               Good="Artist, Creative, Hacker"
               style={{
-                height: 270
+                height: 270,
+                border:"1px solid #00000020"
               }}
             />
           </Col>
 
           <Col>
-            <Card inverse color="" style={{ borderColor: "pink" }}>
+            <Card inverse color="" style={{ borderColor: "#00000020" }}>
               <CardBody style={{ height: "270px", color: "grey" }}>
                 <CardTitle className="text-capitalize">
                  
@@ -127,6 +128,7 @@ class ApplicantProfile extends React.Component {
                     <Button
                       onClick={this.toggle}
                       style={{ marginRight: "10px" }}
+                      color="primary"
                     >
                       Send Email
                     </Button>
@@ -141,7 +143,7 @@ class ApplicantProfile extends React.Component {
                         </p>
                       </div>
                       <Input
-                        placeholder="Email Subject"
+                        placeholder="Subject"
                         style={{
                           marginLeft: "17px",
                           marginRight: "17px",
@@ -150,7 +152,7 @@ class ApplicantProfile extends React.Component {
                       />
                       <Input
                         type="textarea"
-                        placeholder="Email Content"
+                        placeholder="Content"
                         style={{
                           margin: "17px",
                           width: "90%",
@@ -158,7 +160,7 @@ class ApplicantProfile extends React.Component {
                         }}
                       />
                       <ModalFooter>
-                        <Button color="secondary" onClick={this.toggle}>
+                        <Button color="primary" onClick={this.toggle}>
                           Send
                         </Button>
                         <Button color="light" onClick={this.toggle}>
@@ -173,7 +175,7 @@ class ApplicantProfile extends React.Component {
           </Col>
 
           <Col>
-            <Card inverse color="" style={{ borderColor: "pink" }}>
+            <Card inverse color="" style={{ borderColor: "#00000020" }}>
               <CardBody style={{ height: "270px", color: "grey" }}>
                 <CardTitle className="text-capitalize">
                  
@@ -205,7 +207,7 @@ class ApplicantProfile extends React.Component {
 
         <Row>
           <Col lg={9} md={9} sm={9} xs={12}>
-            <Card inverse color="" style={{ borderColor: "pink" }}>
+            <Card inverse color="" style={{ borderColor: "#00000020" }}>
               <CardBody style={{  color: "grey" }}>
                 <CardTitle className="text-capitalize">
                  
@@ -255,7 +257,7 @@ class ApplicantProfile extends React.Component {
                               />
                             </ModalBody>
                             <ModalFooter onClick={e=>e.stopPropagation()}>
-                              <Button color="secondary" 
+                              <Button color="primary" 
                                 onClick= {this.toggleFeedBack}
                               >Save</Button>
                               <Button color="light"
@@ -302,7 +304,7 @@ class ApplicantProfile extends React.Component {
             </Card>
           </Col>
           <Col lg={3} md={3} sm={3} xs={12}>
-            <Card inverse color="" style={{ borderColor: "pink" }}>
+            <Card inverse color="" style={{ borderColor: "#00000020" }}>
               <CardBody style={{ height: "270px", color: "grey" }}>
                 <CardTitle className="text-capitalize">
                  

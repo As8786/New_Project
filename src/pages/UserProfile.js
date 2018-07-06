@@ -60,7 +60,7 @@ class UserProfile extends React.Component {
   render() {
     return (
       <Page title="User Profile">
-        <Row style={{ textAlign: "center", justifyContent: "center", color:"#FFF0F5", marginBottom:"27px" }}>
+        <Row style={{ textAlign: "center", justifyContent: "center", marginBottom:"27px" }}>
           <Col md={6} sm={6} xs={12}>
             <Card
               inverse
@@ -74,7 +74,7 @@ class UserProfile extends React.Component {
                 alignContent: "center",
                 height: "420px",
                 color:"grey",
-                border:"1px solid pink"
+                border:"1px solid #00000020"
               }}
             >
               <CardImgOverlay>
@@ -141,7 +141,7 @@ class UserProfile extends React.Component {
                         />
                       </div>
                       <Button
-                        color="secondary"
+                        color="primary"
                         style={{
                           width: "70px",
                           margin: "auto",
@@ -173,7 +173,7 @@ class UserProfile extends React.Component {
                       {this.state.linkedin}
                     </p>
                     <Button
-                      color="secondary"
+                      color="primary"
                       onClick={this.toggleIsEditActionned}
                     >
                       Edit Profile
@@ -199,8 +199,8 @@ class UserProfile extends React.Component {
                   <p style={{fontStyle:"bold"}}>  Send Email for applicants  </p>
                 </CardText>
                 <div style={{textAlign:"right"}}>
-                  <Button style={{ marginBottom:"17px", marginRight:"7px"}} color="secondary">Add New Task</Button>   
-                  <Button style={{ marginBottom:"17px"}} color="secondary">View All</Button>   
+                  <Button style={{ marginBottom:"17px", marginRight:"7px"}} color="primary">Add New Task</Button>   
+                  <Button style={{ marginBottom:"17px"}} color="primary">View All</Button>   
                   
                 </div>
               </CardBody>
@@ -219,8 +219,8 @@ class UserProfile extends React.Component {
                   <p style={{fontStyle:"bold"}}> New Feature : Team please use our new platform </p>
                 </CardText>
                 <div style={{textAlign:"right"}}>
-                  <Button style={{ marginBottom:"17px", marginRight:"7px"}} color="secondary">Add New Task</Button>   
-                  <Button style={{ marginBottom:"17px"}} color="secondary">View All</Button>   
+                  <Button style={{ marginBottom:"17px", marginRight:"7px"}} color="primary">Add New Task</Button>   
+                  <Button style={{ marginBottom:"17px"}} color="primary">View All</Button>   
                   
                 </div>
               </CardBody>

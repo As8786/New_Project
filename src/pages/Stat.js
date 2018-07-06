@@ -203,20 +203,20 @@ class Stat extends React.Component{
         </Col>
       </Row>
               <div style={{ marginTop:"7px", marginBottom:"7px", textAlign:"right"}}>
-                <Button color="secondary" style={{marginRight:"10px"}} onClick={()=>window.location.reload()}>Remove All Filter</Button>
-                <Button color="secondary" style={{marginRight:"10px"}} onClick={()=>this.exportExcel(applicants)}>Export Excel File </Button>
+                <Button color="primary" style={{marginRight:"10px"}} onClick={()=>window.location.reload()}>Remove All Filter</Button>
+                <Button color="primary" style={{marginRight:"10px"}} onClick={()=>this.exportExcel(applicants)}>Export Excel File </Button>
                 <React.Fragment >
-                    <Button onClick={this.toggle()} style={{marginRight:"10px"}}>Send Emails</Button>
+                    <Button color="primary" onClick={this.toggle()} style={{marginRight:"10px"}}>Send Emails</Button>
                     <Modal
                       isOpen={this.state.modal}
                       toggle={this.toggle()}
                       className={this.props.className}
                       >
                       <div style={{margin:"17px 17px 0 17px"}}> <p> <b>Email</b> </p> </div>
-                      <Input placeholder="Email Subject" style={{marginLeft:"17px",marginRight:"17px",width:"90%" }}/>
-                      <Input type="textarea" placeholder="Email Content" style={{margin:"17px",width:"90%", minHeight:"300px"  }}/>
+                      <Input placeholder="Subject" style={{marginLeft:"17px",marginRight:"17px",width:"90%" }}/>
+                      <Input type="textarea" placeholder="Content" style={{margin:"17px",width:"90%", minHeight:"300px"  }}/>
                       <ModalFooter>
-                        <Button color="secondary" onClick={this.toggle()}>
+                        <Button color="primary" onClick={this.toggle()}>
                           Send to {applicants.length} Candidates
                         </Button>{' '}
                         <Button color="light" onClick={this.toggle()}>
@@ -240,7 +240,7 @@ class Stat extends React.Component{
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Birthday Date</th>
+                    <th>Birth Date</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Town</th>

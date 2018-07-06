@@ -21,7 +21,7 @@ const NumberWidget = ({
           </Typography>
           <Typography className="mb-0 text-muted small">{subtitle}</Typography>
         </CardText>
-        <CardTitle className={`text-${color}`} style={{paddingTop:"10px", marginLeft:"7px"}}><b>{number}</b></CardTitle>
+        <CardTitle style={{paddingTop:"10px", marginLeft:"7px", color:"#d7790e"}}><b>{number}</b></CardTitle>
       </div>
    
 {/*      <CardText tag="div" className="d-flex justify-content-between">
