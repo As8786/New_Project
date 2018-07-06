@@ -47,7 +47,7 @@ class Stat extends React.Component{
     applicants = applicants.filter(e=> {
      return (this.state.education ==="ALL" || !this.state.education  ? e :(this.state.education === "college" ? e.college !== "" : e.college === "") ) &&
             (this.state.gender ==="ALL" || !this.state.gender  ? e :(this.state.gender === "male" ? e.gender === "male" : e.gender === "female") ) && 
-            (this.state.town ==="ALL" || !this.state.town  ? e : (e.governerat) === this.state.town) &&
+            (this.state.town ==="ALL" || !this.state.town  ? e : (e.governerat).toLocaleLowerCase() === (this.state.town).toLocaleLowerCase()) &&
             (this.state.name ==="" || !this.state.name  ? e : (e.firstName).toLowerCase() === (this.state.name).toLowerCase())&&
             (this.state.criteria ==="" || !this.state.criteria  ? e : (e.criteria && (e.criteria).length > 0 ? (e.criteria).indexOf((this.state.criteria).toLowerCase()) !==-1 : "") )&&
             (this.state.college ==="" || !this.state.college  ? e : ((e.college).toLowerCase()).indexOf((this.state.college).toLowerCase()) !==-1 || ((e.school).toLowerCase()).indexOf((this.state.college).toLowerCase()) !==-1)&&
@@ -147,7 +147,9 @@ class Stat extends React.Component{
                   <option value="tunis">Tunis</option>
                   <option value="ben arous">Ben Arous</option>  
                   <option value="bizerte">Bizerte</option>  
-                  <option value="kairouan">Kairouan</option>             
+                  <option value="kairouan">Kairouan</option> 
+                  <option value="sfax">Sfax</option>   
+                  <option value="sousse">Sousse</option>                                                                                                     
                   <option value="tabarka">Tabarka</option>                                         
                 </select>
                </div>     

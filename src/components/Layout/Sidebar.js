@@ -119,16 +119,15 @@ class Sidebar extends React.Component {
         <div className={bem.e('background')} style={sidebarBackground} />
         <div className={bem.e('content')}>
           <Navbar>
-            <SourceLink className="navbar-brand " style={{textAlign :"center", marginLeft : "10px", color:"azure"}}>
+            <SourceLink className="navbar-brand " style={{justifyContent :"center", marginLeft : "10px", color:"azure"}}>
               <img
                 src='biat.png'
-                width="90"
-                height="40"
+                width="150"
+                height="70"
                 className="pr-2"
                 alt=""
               />
               <br/>
-              <span> BIAT Fundation </span>
             </SourceLink>
           </Navbar>
           <Nav vertical>

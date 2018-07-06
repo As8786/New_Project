@@ -102,9 +102,9 @@ class ApplicantProfile extends React.Component {
             <Card inverse color="" style={{ borderColor: "pink" }}>
               <CardBody style={{ height: "270px", color: "grey" }}>
                 <CardTitle className="text-capitalize">
-                  <i>
+                 
                     <b> Contacts</b>
-                  </i>
+                  
                 </CardTitle>
                 <CardText style={{ fontSize: "14px", marginTop: "30px" }}>
                   <p style={{ fontStyle: "bold" }}>
@@ -176,9 +176,9 @@ class ApplicantProfile extends React.Component {
             <Card inverse color="" style={{ borderColor: "pink" }}>
               <CardBody style={{ height: "270px", color: "grey" }}>
                 <CardTitle className="text-capitalize">
-                  <i>
-                    <b>Houssem Activity Information</b>
-                  </i>
+                 
+                    <b> Activity Information</b>
+                  
                 </CardTitle>
                 <CardText style={{ fontSize: "14px", marginTop: "30px" }}>
                   <p style={{ fontStyle: "bold" }}>
@@ -208,9 +208,9 @@ class ApplicantProfile extends React.Component {
             <Card inverse color="" style={{ borderColor: "pink" }}>
               <CardBody style={{  color: "grey" }}>
                 <CardTitle className="text-capitalize">
-                  <i>
-                    <b> Houssem Followed Trainning Program</b>
-                  </i>
+                 
+                    <b>  Followed Trainning Program</b>
+                  
                 </CardTitle>
                 <CardText style={{ fontSize: "14px", marginTop: "30px" }}>
                   <Table striped style={{tableLayout: "fixed", textAlign:"center"}}>
@@ -305,9 +305,9 @@ class ApplicantProfile extends React.Component {
             <Card inverse color="" style={{ borderColor: "pink" }}>
               <CardBody style={{ height: "270px", color: "grey" }}>
                 <CardTitle className="text-capitalize">
-                  <i>
+                 
                     <b>Education Course</b>
-                  </i>
+                  
                 </CardTitle>
                 <CardText style={{ fontSize: "14px", marginTop: "30px" }}>
                   <p style={{ fontStyle: "bold" }}>

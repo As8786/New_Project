@@ -42,7 +42,6 @@ const Page = ({
         )}
       </div>
       {children}
-      <div style={{textAlign:"center",  bottom: 0,fontWeight:"bold", marginBottom:"7px"}}> Made with <span style={{color:"red", fontSize:"18px"}}>&hearts; </span> by GoMyCode  </div>
     </Tag>
   );
 };
