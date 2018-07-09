@@ -13,6 +13,7 @@ import Applicants from 'pages/Programs'
 import ApplicantProfile from 'pages/ApplicantProfile'
 import Stat from 'pages/Stat'
 import UserProfile from 'pages/UserProfile'
+import AddApplicant from 'pages/AddApplicant'
 // pages
 import DashboardPage from 'pages/DashboardPage';
 import DropdownPage from 'pages/DropdownPage';
@@ -182,6 +183,13 @@ class App extends React.Component {
               path="/user-profile"
               layout={MainLayout}
               component={UserProfile}
+            />
+
+            <LayoutRoute
+              exact
+              path="/add-applicant"
+              layout={MainLayout}
+              component={AddApplicant}
             />
 
             <Redirect to="/" />

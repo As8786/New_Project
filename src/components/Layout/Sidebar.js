@@ -86,6 +86,7 @@ const navItems = [
   { to: '/stat', name: 'applicants', exact: false, Icon: MdInsertChart }, 
   { to: '/applicant-profile', name: 'applicant profile', exact: false, Icon: MdWidgets },
   { to: '/user-profile', name: 'User Profile', exact: false, Icon: MdStar },
+  { to: '/add-applicant', name: 'Add Applicant', exact: false, Icon: MdTextFields },  
   { to: '/login', name: 'login / signup', exact: false, Icon: MdAccountCircle },    
   
 ];
